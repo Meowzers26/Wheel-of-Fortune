@@ -15,11 +15,16 @@ public class NewBehaviourScript : MonoBehaviour
             transform.Rotate(0, genSpeed, 0, Space.World);
             genSpeed -= subSpeed;
         }
+
+        if (genSpeed <= 0) {
+            genSpeed = 0;
+            isSpinning = false;
+        }
     }
 
     public void spinWheel() {
-        genSpeed = Random.Range(2.000f, 5.000f);
-        subSpeed = Random.Range(0.003f, 0.009f);
+        genSpeed = Random.Range(5.000f, 9.000f);
+        subSpeed = Random.Range(0.013f, 0.019f);
         isSpinning = true;
     }
 }
