@@ -18,7 +18,7 @@ public class Playeranimation : MonoBehaviour
     void Update()
     {
         if (animator != null) {
-            if (ws.isSpinning == true) {
+            if (ws.isSpinning == false && ws.buttonClicked == true) {
                 animator.SetTrigger("Celebrate");
             }
         }

@@ -7,6 +7,7 @@ public class Spinner : MonoBehaviour
     public float genSpeed;
     public float subSpeed;
     public bool isSpinning = false;
+    public bool buttonClicked = false;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -26,5 +27,6 @@ public class Spinner : MonoBehaviour
         genSpeed = Random.Range(5.000f, 9.000f);
         subSpeed = Random.Range(0.013f, 0.019f);
         isSpinning = true;
+        buttonClicked = true;
     }
 }
