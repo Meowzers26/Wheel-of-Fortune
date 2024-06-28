@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Playeranimatino : MonoBehaviour
+public class Playeranimation : MonoBehaviour
 {
-
+    
     private Animator animator;
     public Spinner ws;
 
