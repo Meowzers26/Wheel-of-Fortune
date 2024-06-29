@@ -23,15 +23,15 @@ public class Cameraenabler : MonoBehaviour
     void Update()
     {
         if (puzzleOn == true) {
-            puzzle.camera.enabled = true;
+            puzzle.GetComponent<Camera>().enabled = true;
         }
 
         if (isoOn == true) {
-            iso.camera.enabled = true;
+            iso.GetComponent<Camera>().enabled = true;
         }
 
         if (wheelOn == true) {
-            wheel.camera.enabled = true;
+            wheel.GetComponent<Camera>().enabled = true;
         }
     }
 }

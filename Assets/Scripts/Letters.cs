@@ -19,9 +19,9 @@ public class Letters : MonoBehaviour
     void Update()
     {
         if (inUse == true) {
-            GetComponent<Renderer>().material = lettersInUse;
+            GetComponent<MeshRenderer>().material = lettersInUse;
         } else {
-            GetComponent<Renderer>().material = lettersInDisuse;
+            GetComponent<MeshRenderer>().material = lettersInDisuse;
         }
     }
 }
