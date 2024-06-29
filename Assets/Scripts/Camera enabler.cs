@@ -24,14 +24,20 @@ public class Cameraenabler : MonoBehaviour
     {
         if (puzzleOn == true) {
             puzzle.GetComponent<Camera>().enabled = true;
+            iso.GetComponent<Camera>().enabled = false;
+            wheel.GetComponent<Camera>().enabled = false;
         }
 
         if (isoOn == true) {
             iso.GetComponent<Camera>().enabled = true;
+            puzzle.GetComponent<Camera>().enabled = false;
+            wheel.GetComponent<Camera>().enabled = false;
         }
 
         if (wheelOn == true) {
             wheel.GetComponent<Camera>().enabled = true;
+            iso.GetComponent<Camera>().enabled = false;
+            puzzle.GetComponent<Camera>().enabled = false;
         }
     }
 }
