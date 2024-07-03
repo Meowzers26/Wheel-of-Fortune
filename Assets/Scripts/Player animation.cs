@@ -21,6 +21,10 @@ public class Playeranimation : MonoBehaviour
             if (ws.isSpinning == false && ws.buttonClicked == true) {
                 animator.SetTrigger("Celebrate");
             }
+
+            else {
+                animator.SetTrigger("Idle");
+            }
         }
     }
 }
