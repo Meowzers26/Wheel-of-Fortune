@@ -20,6 +20,7 @@ public class Spinner : MonoBehaviour
         if (genSpeed <= 0) {
             genSpeed = 0;
             isSpinning = false;
+            buttonClicked = false;
         }
     }
 
