@@ -22,12 +22,6 @@ public class Spinner : MonoBehaviour
             genSpeed = 0;
             isSpinning = false;
         }
-
-        if (isSpinning == false && buttonClicked == true) {
-            triggerCelebrate = true;
-        } else {
-            triggerCelebrate = false;
-        }
     }
 
     public void spinWheel() {

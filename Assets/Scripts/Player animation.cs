@@ -18,12 +18,12 @@ public class Playeranimation : MonoBehaviour
     void Update()
     {
         if (animator != null) {
-            if (ws.triggerCelebrate == true) {
-                animator.SetTrigger("Celebrate");
+            if (isSpinning == false && buttonClicked == true) {
+                animator.SetBool("celebrate", true);
             }
 
             else {
-                animator.SetTrigger("Idle");
+                animator.SetBool("celebrate", false);
             }
         }
 
