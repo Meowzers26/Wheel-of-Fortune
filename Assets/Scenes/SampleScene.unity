@@ -9396,6 +9396,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ws: {fileID: 1881784319}
+  celebrateTimerInit: 4.9
+  celebrateTimer: 4.9
 --- !u!224 &1618519821 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 665246176955130372, guid: 7fd2f4f798e225b449e57ac5a1736dee, type: 3}
