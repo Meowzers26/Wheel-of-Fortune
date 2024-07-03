@@ -8,6 +8,7 @@ public class Spinner : MonoBehaviour
     public float subSpeed;
     public bool isSpinning = false;
     public bool buttonClicked = false;
+    private bool triggerCelebrate = false;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -20,6 +21,12 @@ public class Spinner : MonoBehaviour
         if (genSpeed <= 0) {
             genSpeed = 0;
             isSpinning = false;
+        }
+
+        if (isSpinning == false && buttonClicked == true) {
+            triggerCelebrate = true;
+        } else {
+            triggerCelebrate = false;
         }
     }
 

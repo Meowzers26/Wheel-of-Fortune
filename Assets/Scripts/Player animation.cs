@@ -18,7 +18,7 @@ public class Playeranimation : MonoBehaviour
     void Update()
     {
         if (animator != null) {
-            if (ws.isSpinning == false && ws.buttonClicked == true) {
+            if (ws.triggerCelebrate == true) {
                 animator.SetTrigger("Celebrate");
             }
 
@@ -26,5 +26,6 @@ public class Playeranimation : MonoBehaviour
                 animator.SetTrigger("Idle");
             }
         }
+
     }
 }
