@@ -28,6 +28,7 @@ public class Letters : MonoBehaviour
 
         } else {
             GetComponent<MeshRenderer>().material = lettersInDisuse;
+            outputLetter.text = "";
         }
     }
 }
